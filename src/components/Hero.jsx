@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="max-w-[1200px] mx-auto text-center flex flex-col items-center w-full relative z-10">
         <div className="mb-4">
           <span className="font-label-mono text-primary bg-primary/10 rounded-full backdrop-blur-md border border-primary/20 text-body-lg px-6 py-2.5 tracking-[0.2em]">
-            HELLO, I'M
+            Hello, I'm
           </span>
         </div>
         <h1 className="font-display-lg text-display-lg md:text-[120px] text-on-surface mb-4 tracking-tighter leading-none drop-shadow-2xl">

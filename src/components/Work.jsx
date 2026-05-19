@@ -5,7 +5,7 @@ const projects = [
     subtitle: 'National Level Project Presentation',
     description:
       'Krishi Drishti is a Smart Farming Assistance System designed to empower Indian farmers with AI-powered agricultural insights and digital farming tools. Built using a Spring Boot (Java 17) backend and a React frontend, the platform provides features like crop management assistance, pest detection, market price tracking, and access to government schemes through a localized farmer-friendly interface with Marathi language support.',
-    tags: ['Spring Boot', 'Java 17', 'React', 'MySQL', 'REST APIs', 'AWS'],
+    tags: ['Spring Boot', 'Spring AI', 'Spring Security', 'Java 17', 'React', 'MySQL', 'REST APIs', 'AWS'],
     link: '#',
   },
   {
@@ -19,7 +19,7 @@ const projects = [
   },
   {
     id: 'mg-fitness',
-    title: 'MG Fitness Web Page',
+    title: 'MG Fitness',
     subtitle: 'Fitness Website',
     description:
       'Developed and deployed a responsive fitness website using React and Netlify, featuring smooth modern animations powered by GSAP for an interactive user experience.',

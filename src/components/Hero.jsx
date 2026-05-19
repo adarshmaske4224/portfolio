@@ -1,10 +1,30 @@
 
+import { useState, useEffect } from 'react';
+
 const Hero = () => {
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      setMousePosition({ x: e.clientX, y: e.clientY });
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, []);
+
   return (
     <section
       className="hero-bg min-h-screen flex items-center justify-center px-6 relative overflow-hidden"
       id="hero"
     >
+      {/* Glowing Cursor Light */}
+      <div
+        className="pointer-events-none fixed inset-0 z-30 transition-opacity duration-300"
+        style={{
+          background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(182, 139, 255, 0.15), transparent 40%)`
+        }}
+      />
       <div className="max-w-[1200px] mx-auto text-center flex flex-col items-center w-full relative z-10">
         <div className="mb-4">
           <span className="font-label-mono text-primary bg-primary/10 rounded-full backdrop-blur-md border border-primary/20 text-body-lg px-6 py-2.5 tracking-[0.2em]">
@@ -17,10 +37,10 @@ const Hero = () => {
         <p className="font-label-mono text-label-mono tracking-widest text-primary mb-12 bg-black/40 inline-block px-4 py-1 backdrop-blur-sm">
           JAVA &amp; SPRING BOOT DEVELOPER
         </p>
-        <p className="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mx-auto mt-4 mb-8 leading-relaxed">
+        <p className="font-body-lg text-body-lg text-on-surface-variant max-w-[600px] mx-auto mt-4 mb-8 leading-relaxed">
           Computer Science Engineering student passionate about Backend Development, DevOps, and Cloud Technologies.
 
-          Specialized in Java, Spring Boot, REST APIs, and AWS with experience building backend systems and full-stack applications using React.
+          Specialized in Java, Spring Boot, REST APIs, and AWS with experience in building backend systems and full-stack applications using React.
 
           Focused on backend architecture, authentication systems, cloud deployment, and modern software engineering practices.
         </p>
@@ -60,6 +80,17 @@ const Hero = () => {
               <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
             </svg>
             LinkedIn
+          </a>
+        </div>
+
+        {/* Email Address */}
+        <div className="mt-10">
+          <a
+            href="mailto:adarshmaske2005@gmail.com"
+            className="font-label-mono text-secondary hover:text-primary transition-colors flex items-center justify-center gap-2 text-sm tracking-wider"
+          >
+            <span className="material-symbols-outlined text-base">mail</span>
+            adarshmaske2005@gmail.com
           </a>
         </div>
       </div>

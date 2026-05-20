@@ -1,12 +1,10 @@
-import backendIcon from '../assets/backend-icon.png'
 import BackgroundCube from './BackgroundCube'
 
 
 const expertiseCards = [
   {
     id: 'backend',
-    icon: 'image',
-    iconSrc: backendIcon,
+    icon: 'database',
     title: (
       <>
         <span className="text-primary">Backend</span>

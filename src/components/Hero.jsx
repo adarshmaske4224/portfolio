@@ -26,23 +26,19 @@ const Hero = () => {
         }}
       />
       <div className="max-w-[1200px] mx-auto text-center flex flex-col items-center w-full relative z-10">
-        <div className="mb-4">
-          <span className="font-label-mono text-primary bg-primary/10 rounded-full backdrop-blur-md border border-primary/20 text-body-lg px-6 py-2.5 tracking-[0.2em]">
+        <div className="mb-2">
+          <span className="font-label-mono text-primary bg-primary/10 rounded-full backdrop-blur-md border border-primary/20 text-sm px-5 py-2 tracking-[0.2em]">
             Hello, I'm
           </span>
         </div>
         <h1 className="font-display-lg text-display-lg md:text-[120px] text-on-surface mb-4 tracking-tighter leading-none drop-shadow-2xl">
           ADARSH MASKE
         </h1>
-        <p className="font-label-mono text-label-mono tracking-widest text-primary mb-12 bg-black/40 inline-block px-4 py-1 backdrop-blur-sm">
+        <p className="font-label-mono text-label-mono tracking-widest text-primary mb-10 bg-black/40 inline-block px-4 py-1 backdrop-blur-sm">
           JAVA &amp; SPRING BOOT DEVELOPER
         </p>
-        <p className="font-body-lg text-body-lg text-on-surface-variant max-w-[600px] mx-auto mt-4 mb-8 leading-relaxed">
-          Computer Science Engineering student passionate about Backend Development, DevOps, and Cloud Technologies.
-
-          Specialized in Java, Spring Boot, REST APIs, and AWS with experience in building backend systems and full-stack applications using React.
-
-          Focused on backend architecture, authentication systems, cloud deployment, and modern software engineering practices.
+        <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mt-2 mb-8 leading-relaxed">
+          Computer Science student specialized in Java, Spring Boot, and AWS. I build scalable backend architectures, secure authentication systems, and cloud-deployed applications, with a solid foundation in React for full-stack integration.
         </p>
         <div className="mt-12 flex gap-6 flex-wrap justify-center">
           <a
@@ -84,12 +80,12 @@ const Hero = () => {
         </div>
 
         {/* Email Address */}
-        <div className="mt-10">
+        <div className="mt-16">
           <a
             href="mailto:adarshmaske2005@gmail.com"
-            className="font-label-mono text-secondary hover:text-primary transition-colors flex items-center justify-center gap-2 text-sm tracking-wider"
+            className="font-label-mono text-secondary hover:text-primary transition-colors flex items-center justify-center gap-2.5 text-base tracking-wider"
           >
-            <span className="material-symbols-outlined text-base">mail</span>
+            <span className="material-symbols-outlined text-xl">mail</span>
             adarshmaske2005@gmail.com
           </a>
         </div>

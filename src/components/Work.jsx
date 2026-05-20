@@ -38,6 +38,11 @@ const Work = () => {
   return (
     <section className="py-section-gap px-6 bg-surface" id="work">
       <div className="max-w-[1200px] mx-auto">
+        <div className="flex items-center gap-4 mb-16 justify-center">
+          <div className="h-[1px] w-12 bg-primary/30"></div>
+          <h2 className="font-headline-xl text-headline-xl text-on-surface text-center">My Work</h2>
+          <div className="h-[1px] w-12 bg-primary/30"></div>
+        </div>
         {projects.map((project) => (
           <div key={project.id} className="flex flex-col md:flex-row gap-10 mb-12 items-center bg-[#121214] border border-white/5 p-8 md:p-10 rounded-2xl transition-all hover:border-white/10 hover:shadow-2xl hover:shadow-primary/5">
             <div className="w-full md:w-2/3 order-2 md:order-1 flex flex-col items-start">
@@ -70,7 +75,7 @@ const Work = () => {
                 </a>
               </div>
             </div>
-            
+
             <div className="w-full md:w-1/3 order-1 md:order-2 flex items-center justify-center p-12 bg-black/20 rounded-xl border border-white/5 aspect-square md:aspect-auto md:h-full min-h-[250px]">
               <span className="material-symbols-outlined text-[120px] text-primary/40 drop-shadow-lg">
                 {project.icon}

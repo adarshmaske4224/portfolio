@@ -8,7 +8,7 @@ const projects = [
     tags: ['Spring Boot', 'Spring AI', 'Spring Security', 'Java 17', 'React', 'MySQL', 'REST APIs', 'AWS'],
     icon: 'eco',
     codeLink: '#',
-    demoLink: '#',
+    demoLink: 'https://krushi-drushti.vercel.app',
   },
   {
     id: 'smart-complaint',

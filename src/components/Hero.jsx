@@ -60,7 +60,9 @@ const Hero = () => {
             GitHub
           </a>
           <a
-            href="#"
+            href="/adarshmaskecv.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="social-glow-btn flex items-center gap-3 bg-primary/10 border border-primary/30 text-primary font-label-mono text-label-mono uppercase tracking-wider px-8 py-3.5 rounded-full backdrop-blur-md transition-all duration-300 hover:bg-primary/20 hover:scale-105 active:scale-95"
           >
             <span className="material-symbols-outlined">description</span>

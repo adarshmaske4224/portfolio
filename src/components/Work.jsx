@@ -7,7 +7,7 @@ const projects = [
       'Krishi Drishti is a Smart Farming Assistance System designed to empower Indian farmers with AI-powered agricultural insights and digital farming tools. Built using a Spring Boot (Java 17) backend and a React frontend, the platform provides features like crop management assistance, pest detection, market price tracking, and access to government schemes through a localized farmer-friendly interface with Marathi language support.',
     tags: ['Spring Boot', 'Spring AI', 'Spring Security', 'Java 17', 'React', 'MySQL', 'REST APIs', 'AWS'],
     icon: 'eco',
-    codeLink: '#',
+    codeLink: 'https://github.com/adarshmaske4224/krushi-drushti.git',
     demoLink: 'https://krushi-drushti.vercel.app',
   },
   {
@@ -18,7 +18,7 @@ const projects = [
       'Built a smart complaint management system with role-based access for students and administrators. Students can raise complaints with issue descriptions and image uploads, while administrators manage and resolve complaints based on priority levels such as High, Medium, and Low.',
     tags: ['Spring Boot', 'React', 'MySQL', 'JWT', 'REST APIs'],
     icon: 'admin_panel_settings',
-    codeLink: '#',
+    codeLink: 'https://github.com/adarshmaske4224/mcp-shopping-assistant.git',
     demoLink: '#',
   },
   {
@@ -29,7 +29,7 @@ const projects = [
       'Developed and deployed a responsive fitness website using React and Netlify, featuring smooth modern animations powered by GSAP for an interactive user experience.',
     tags: ['React', 'GSAP', 'Netlify', 'JavaScript', 'CSS'],
     icon: 'fitness_center',
-    codeLink: '#',
+    codeLink: 'https://github.com/adarshmaske4224/MG-fitness',
     demoLink: 'https://mg-fit.netlify.app/',
   },
 ]
@@ -67,11 +67,11 @@ const Work = () => {
               <div className="flex flex-wrap gap-4">
                 <a
                   className="inline-flex items-center justify-center bg-primary text-on-primary px-6 py-2.5 rounded-lg hover:bg-primary-fixed-dim hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 font-bold uppercase text-sm tracking-wide"
-                  href={project.demoLink}
+                  href={project.codeLink}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Live Demo
+                  GitHub Code
                 </a>
               </div>
             </div>
